@@ -10,10 +10,10 @@ data class CategoryEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
-    val name: String,
+    var name: String,
 
-    val description: String? = null,
+    var description: String? = null,
 
     @OneToMany(mappedBy = "category", cascade = [CascadeType.ALL], fetch = FetchType.LAZY)
-    val items: MutableList<ItemEntity> = mutableListOf()
+    var items: MutableList<ItemEntity> = mutableListOf()
 )

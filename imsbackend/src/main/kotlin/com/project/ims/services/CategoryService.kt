@@ -10,8 +10,9 @@ interface CategoryService {
 
 
     fun list():List<CategoryEntity>
-//
-//    fun get(id: Long): CategoryEntity?
-//
-//    fun fullUpdate(id:Long,CategoryEntity: CategoryEntity):CategoryEntity
+
+    fun update(id: Long, categoryEntity: CategoryEntity):CategoryEntity
+
+    fun delete(id:Long)
+
 }

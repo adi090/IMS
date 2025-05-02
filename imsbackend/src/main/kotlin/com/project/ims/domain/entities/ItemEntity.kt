@@ -16,11 +16,15 @@ data class ItemEntity(
 
     val description: String? = null,
 
-    val quantity: Int = 0,
+    var quantity: Int = 0,
 
     val price: Double = 0.0,
-
+//    val promo:String?=null,
+//    @OneToMany(mappedBy = "item")
+//    val transactions: List<TransactionEntity> = listOf(),
     @ManyToOne
     @JoinColumn(name = "category_id")
     val category: CategoryEntity? = null
+
 )
+

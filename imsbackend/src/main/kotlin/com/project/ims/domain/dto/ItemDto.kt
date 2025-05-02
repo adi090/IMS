@@ -8,6 +8,7 @@ data class ItemDto (
     val description: String? = null,
     val quantity: Int = 0,
     val price: Double = 0.0,
-    val category: CategoryEntity? = null
+    val categoryId: Long? = null,
+//    val promo:String?=null
 
 )
