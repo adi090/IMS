@@ -1,0 +1,18 @@
+# Ignore node_modules
+imsfrontend/node_modules/
+
+
+# Ignore build directories
+frontend/build/
+backend/target/
+
+# Ignore application.properties
+imsbackend/src/main/resources/application.properties
+
+# IDE files
+*.iml
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
